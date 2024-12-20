@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <Interface>
+        <MainWindow title="Administración de Inventario del Laboratorio Prototipado">
+            <Layout type="QHBoxLayout">
+                <Button name="add_button" text="Añadir Insumo" />
+                <Button name="update_button" text="Actualizar Insumo" />
+                <Button name="delete_button" text="Eliminar Insumo" />
+                <Button name="view_button" text="Ver Inventario" />
+                <Button name="request_button" text="Solicitar Insumo" />
+            </Layout>
+        </MainWindow>
+        <AddWindow title="Añadir Insumo">
+            <Layout type="QVBoxLayout">
+                <Label text="Nombre del Insumo" />
+                <LineEdit name="name_input" />
+                <Label text="Cantidad" />
+                <LineEdit name="quantity_input" />
+                <Label text="Proveedor" />
+                <LineEdit name="supplier_input" />
+                <Label text="Fecha de Adquisición" />
+                <LineEdit name="date_input" />
+                <Button name="save_button" text="Guardar" />
+                <Button name="cancel_button" text="Cancelar" />
+            </Layout>
+        </AddWindow>
+        <UpdateWindow title="Actualizar Insumo">
+            <Layout type="QVBoxLayout">
+                <Label text="ID del Insumo" />
+                <LineEdit name="id_input" />
+                <Label text="Nombre del Insumo" />
+                <LineEdit name="name_input" />
+                <Label text="Cantidad" />
+                <LineEdit name="quantity_input" />
+                <Label text="Proveedor" />
+                <LineEdit name="supplier_input" />
+                <Label text="Fecha de Adquisición" />
+                <LineEdit name="date_input" />
+                <Button name="update_button" text="Actualizar" />
+                <Button name="cancel_button" text="Cancelar" />
+            </Layout>
+        </UpdateWindow>
+        <DeleteWindow title="Eliminar Insumo">
+            <Layout type="QVBoxLayout">
+                <Label text="ID del Insumo" />
+                <LineEdit name="id_input" />
+                <Button name="delete_button" text="Eliminar" />
+                <Button name="cancel_button" text="Cancelar" />
+            </Layout>
+        </DeleteWindow>
+        <ViewWindow title="Ver Inventario">
+            <Layout type="QVBoxLayout">
+                <TableWidget columnCount="5">
+                    <HorizontalHeaderLabels>
+                        <HeaderLabel text="ID" />
+                        <HeaderLabel text="Nombre del Insumo" />
+                        <HeaderLabel text="Cantidad" />
+                        <HeaderLabel text="Proveedor" />
+                        <HeaderLabel text="Fecha de Adquisición" />
+                    </HorizontalHeaderLabels>
+                </TableWidget>
+                <Button name="refresh_button" text="Refrescar" />
+            </Layout>
+        </ViewWindow>
+        <RequestWindow title="Solicitar Insumo">
+            <Layout type="QVBoxLayout">
+                <Label text="Nombre del Insumo" />
+                <LineEdit name="name_input" />
+                <Label text="Cantidad Solicitada" />
+                <LineEdit name="quantity_input" />
+                <Label text="Propósito" />
+                <LineEdit name="purpose_input" />
+                <Button name="request_button" text="Solicitar" />
+                <Button name="cancel_button" text="Cancelar" />
+            </Layout>
+        </RequestWindow>
+    </Interface>
+</ui>
